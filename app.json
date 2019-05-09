@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/discover",
+    "pages/discover/discover",
+    "pages/cart/cart",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "FaXian",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#989898",
+    "selectedColor": "#373737",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/images/iconfont-home.png",
+        "selectedIconPath": "assets/images/iconfont-home-active.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/discover/discover",
+        "iconPath": "assets/images/iconfont-list.png",
+        "selectedIconPath": "assets/images/iconfont-list-active.png",
+        "text": "我要询价"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "assets/images/iconfont-cart.png",
+        "selectedIconPath": "assets/images/iconfont-cart-active.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "assets/images/iconfont-user.png",
+        "selectedIconPath": "assets/images/iconfont-user-active.png",
+        "text": "我的"
+      }
+    ]
+  }
+}
