@@ -1,0 +1,40 @@
+<!--pages/getOrder/getOrder.wxml-->
+<view class='container'>
+  <view class="orderCompany"  wx:for="{{items}}" wx:key="id">
+    <view class="company">{{item.company}}</view>
+    <van-panel title="{{item.titleName}}" desc="" status="" use-footer-slot>
+      <view class="companyCon"> 
+        <span>品牌：{{item.brand}}</span>
+        <span>品质：{{item.quilty}}</span>
+      </view>
+      <view class="companyCon">
+        配件编号：{{item.brandBumber}}
+      </view>
+      <view class="companyCon"> 
+        <span style="font-weight:bold;">￥ {{item.cost}}</span>
+        <span class="turnRight">数量：{{item.number}}</span>
+      </view>
+      <view slot="footer" class="goodsCon" style='color:#FF5500;'>
+        <span>商品总额</span>
+        <span class="turnRight">{{item.goodsMoney}}</span>
+      </view>
+      <view slot="footer" class="goodsCon" >
+        <span>包装费</span>
+        <span class="turnRight">{{item.packingFee}}</span>
+      </view>
+      <view slot="footer" class="goodsCon" >
+        <span>物流费</span>
+        <span class="turnRight">{{item.logisticsFee}}</span>
+      </view>
+      <view slot="footer" class="footerCost">
+        <van-button size="small">应付：￥{{item.allMoney}}</van-button>
+      </view>
+    </van-panel>
+  </view>
+</view>
+<van-submit-bar
+  price="{{ 3408888.00 }}"
+  button-text="去支付"
+  bind:submit="onSubmit"
+/>
+

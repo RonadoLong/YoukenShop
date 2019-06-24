@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "下单",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "van-panel": "/compoent/dist/panel/index",
+    "van-submit-bar": "/compoent/dist/submit-bar/index"
+  }
+}

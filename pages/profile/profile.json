@@ -1,3 +1,11 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "我的",
+  "navigationBarBackgroundColor": "#FFCF61",
+  "navigationBarTextStyle":"black",
+  "usingComponents": {
+    "van-card": "/compoent/dist/card/index",
+    "van-badge": "/compoent/dist/badge/index",
+    "wux-cell-group": "/compoent/iveiw/cell-group/index",
+    "wux-cell": "/compoent/iveiw/cell/index"
+  }
 }

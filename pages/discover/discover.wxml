@@ -1,2 +1,108 @@
 <!--pages/discover/discover.wxml-->
-<text>pages/discover/discover.wxml</text>
+<view class="container">
+  <van-cell-group>
+    <van-field
+      value="{{ number }}"
+      required
+      clearable
+      icon="comment-o"
+      placeholder="请输入17位VIN码/车架号"
+      bind:click-icon="onClickIcon"
+    />
+
+    <van-field
+      placeholder="车型品牌"
+      icon="arrow"
+      disabled
+      border="{{ false }}"
+    />
+    <view style="font-size:.7rem;padding:.6rem 0 .4rem 0;">配置信息</view>
+    <view>
+      <van-field
+          value="{{ parts }}"
+          type="text"
+          placeholder="填入配件名称或编号"
+          border="{{ false }}"
+        />
+        <van-field
+          value="{{ parts }}"
+          type="text"
+          placeholder="填入配件名称或编号"
+          border="{{ false }}"
+        />
+        <van-field
+          value="{{ parts }}"
+          type="text"
+          placeholder="填入配件名称或编号"
+          border="{{ false }}"
+        />
+        <van-field
+          value="{{ parts }}"
+          type="text"
+          placeholder="填入配件名称或编号"
+          border="{{ false }}"
+        />
+    </view>
+    <view style="font-size:.7rem;padding:.6rem 0 .4rem 0;">上传图片 
+      <span style="color:#999999;">最多上传6张，上传维修单、零件图等，快速报价</span>
+    </view>
+    <view class="camera">
+    <wux-upload listType="picture-card" defaultFileList="{{ fileList }}" max="6" url="https://www.skyvow.cn/api/common/file" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:preview="onPreview">
+      <text>Upload</text>
+    </wux-upload>
+    </view>
+   
+    <view style="font-size:.7rem;padding:.6rem 0 .4rem 0;">备注 
+      <span style="color:#999999;">请输入备注信息</span>
+    </view>
+    <view class="section">
+      <textarea placeholder="" auto-focus />
+    </view>   
+    <view style="font-size:.7rem;padding:.6rem 0 .4rem 0;">期望 
+      <span style="color:#999999;">选择期望</span>
+    </view>
+     <radio-group class="radio-group" bindchange="radioChange">
+     <view class="titleVoice">
+      <span>是否需要发票</span>
+        <label class="radio" wx:for="{{voices}}"  wx:key="id">
+          <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </view>
+    </radio-group>
+    <van-radio-group value="{{ radio }}">
+      <view class="titleVoice">
+         <span>期望配件品质</span>
+        <!-- <van-button class="active">原厂</van-button>
+        <van-button >品牌</van-button>
+        <van-button >拆车件</van-button>
+        <van-button >其他</van-button> -->
+         <wux-tabs defaultCurrent="tab1">
+            <wux-tab key="tab1" title="原厂"></wux-tab>
+            <wux-tab key="tab2" title="品牌"></wux-tab>
+            <wux-tab key="tab3" title="拆车件"></wux-tab>
+            <wux-tab key="tab4" title="其他"></wux-tab>
+        </wux-tabs>
+       </view>
+    </van-radio-group>
+    <radio-group class="radio-group" bindchange="radioChange">
+     <view class="titleVoice">
+      <span>期望的供应商</span>
+        <label class="radio" wx:for="{{suppliers}}"  wx:key="id">
+          <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </view>
+    </radio-group>
+
+    <view style="font-size:.7rem;padding:.6rem 0 .4rem 0;">收货地址</view>
+    <view class="adress">
+      <view>广州市天河区</view>
+      <view>黄先生</view>
+      <view>13800138000</view>
+      <van-icon name="arrow" class="arrRight" />
+    </view>
+
+    <view class="surePull">
+      确认发布
+    </view>
+  </van-cell-group>
+</view>

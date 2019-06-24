@@ -1,0 +1,65 @@
+/* pages/getOrder/getOrder.wxss */
+.container{
+  height: 100%;
+  padding: 0%;
+  margin: 0%;
+  margin-bottom:3rem;
+}
+.orderCompany{
+  width:100%;
+}
+.company{
+  margin:20rpx 0;
+  font-size:.8rem;
+  width:100%;
+  line-height: 2.2rem;
+  text-align: center;
+}
+.companyCon{
+  font-size:.8rem;
+  padding:8rpx 30rpx;
+}
+.goodsCon{
+  font-size:.8rem;
+  padding:8rpx 0rpx;
+
+}
+.footerCost{
+  width:100%;
+  text-align:right;
+  font-size:.85rem;
+  font-weight: bold;
+  border-top:1px solid #eaeaea;
+  margin-top:14rpx;
+  padding-top:14rpx;
+}
+.van-cell__title{
+  font-size:.85rem;
+  font-weight: bold;
+}
+.companyCon span{
+  width:50%;
+  display: inline-block;
+}
+.goodsCon span{
+  width:50%;
+  display: inline-block;
+}
+.goodsCon span:last-child{
+  text-align: right;
+}
+.companyCon .turnRight{
+  text-align: right;
+
+}
+.van-panel__content{
+  border-top:1px solid #eaeaea;
+  border-bottom:1px solid #eaeaea;
+}
+.van-submit-bar{
+  border-top:1px solid #eaeaea;
+}
+.van-button--danger{
+  background-color: #FFCF61 !important;
+  border:1px solid  #FFCF61 !important;
+}

@@ -1,0 +1,160 @@
+/* pages/partsList/list.wxss */
+.container{
+  padding:0 0 1rem 0;
+  background:#FAFAFA;
+}
+.listWith{
+  width:100%;
+}
+.index_search {
+  position: relative;
+  width: 100%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  z-index: 99;
+  margin-top:.7rem;
+
+}
+.index_search .inputSearch{
+  font-size:.7rem;
+  padding-left:1.5rem;
+  width:78%;
+  background-color:#EFEFEF;
+  border-radius:20px;
+  margin-left:.5rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  display: flex;        
+  align-items:center; 
+}
+.index_search .iconSearch{
+  background-repeat:no-repeat;
+  background-size: .9rem;
+  background-position: center;
+  height:1rem;
+  width:1rem;
+  position:absolute;
+  top:.4rem;
+  left:.8rem;
+}
+.index_search .iconDelet{
+  background-repeat:no-repeat;
+  background-size: 1.3rem;
+  background-position: center;
+  height:1.6rem;
+  width:1.4rem;
+  position:absolute;
+  right:.4rem;
+  top:0;
+}
+.wux-tabs--scroll{
+  background:none !important;
+}
+.page__bd{
+  width:100%;
+  margin:0 auto;
+  position: absolute;
+  margin-top: 4.8rem;
+  border-top:1 solid #eaeaea;
+  font-size: .75rem;
+}
+.partsLists{
+  text-align:center;
+  height:2.4rem;
+  line-height:2.4rem;
+  display: block;
+}
+.wux-cell{
+  padding:0 !important;
+}
+.wux-cell-group .wux-cell__text{
+  text-align: center !important;
+}
+.wux-cell-group .wux-cell--hover{
+  background:none !important; 
+}
+.partsLists .wux-col--span-4{
+  border-right:1px solid #eaeaea;
+}
+.van-tabs--line{
+  padding:4.6rem .6rem 0 .6rem !important;
+}
+.wux-filterbar__item{
+  font-size:.7rem !important;
+  color:#777777;
+}
+.van-card{
+  font-size:.65rem !important;
+  color:#666666 !important;
+  padding:5px 0px !important;
+  border-bottom:1px solid #eaeaea;
+}
+.van-card__thumb{
+  width:90px !important;
+  height:90px !important;
+}
+.van-card__content{
+  margin-top:.4rem;
+}
+.van-card__num{
+  border:1px solid #F7B000;
+  color:#F7B000 !important;
+  padding:0rem .4rem;
+}
+.shopcar{
+  position: absolute;
+  right:.2rem;
+  bottom:.5rem;
+  border:1px solid #F7B000;
+  color:#F7B000;
+  padding:.1rem .5rem;
+  border-radius: 3px;
+}
+.van-card__price{
+  margin-top:.1rem;
+  font-size:.75rem;
+}
+.van-tab--active{
+  color:#F7B000 !important;
+}
+.van-tabs__line{
+  background: #F7B000 !important;
+}
+.filterbar-index--wux-filterbar__pop{
+  height: 60%!important;
+  width:100% !important;
+  bottom:0;
+  top:auto !important;
+  right:0;
+  left:0 !important;
+}
+.wux-filterbar__group{
+  width:100%;
+  border:none;
+  margin-top:0 !important;
+}
+.wux-filterbar__group{
+  width:100% !important;
+  border-bottom:1px solid #eaeaea;
+
+}
+.wux-filterbar__btn,.wux-filterbar__btn{
+  background-color: none !important;
+  text-align: left !important;
+  border-bottom:1px solid #eaeaea;
+}
+.wux-filterbar__check,.wux-filterbar__check{
+  border:none !important;
+  background-color: none !important;
+  border-radius: 0 !important;
+}
+.wux-filterbar__btn--checked{
+  border-color:none !important;
+  background: none !important;
+  border:none !important;
+}
+.selectBrand .wux-cascader__inner{
+  width:100% ;
+  flex:0 0 100%;
+  -ms-flex:0 0 100%;
+}

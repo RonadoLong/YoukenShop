@@ -1,0 +1,60 @@
+/* pages/register/register.wxss */
+.container{
+  height: 100%;
+  width:100%;
+  padding: 0%;
+  margin: 0%;
+  margin-bottom:1rem;
+}
+.register{
+  width:100%;
+  margin-bottom:10px;
+  background: #ffffff;
+}
+.van-cell__title{
+  color:#333333 !important;
+}
+van-button{
+  padding:3px 8px;
+  background: #DEDEDE;
+  border-radius: 20px;
+  display: inlein-blcok;
+}
+.register .address{
+  font-size:.75rem;
+  color:#333333;
+  padding:10px 15px;
+}
+.register .address span{
+  display: inline-block;
+  width:25%;
+  color:#666;
+  background-repeat:no-repeat;
+  background-size: .6rem;
+  background-position: 80%;
+ 
+}
+.clickLoad{
+  background:linear-gradient(270deg,rgba(255,101,73,1) 0%,rgba(255,69,60,1) 100%);
+  color:#ffffff;
+}
+.van-cell{
+  border-bottom:1px solid #eaeaea;
+}
+.joinIn{
+  width:86%;
+  display:block; 
+  border-radius:14px;
+  background:#DEDEDE;
+  height:2rem;
+  line-height:2rem;
+  margin:0 auto;
+  color:#999;
+  font-size:.8rem;
+}
+.registerIn{
+  width:100%;
+  text-align:center;
+  margin:1rem 0 3rem 0;
+  cursor: pointer;
+}

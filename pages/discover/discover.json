@@ -1,3 +1,19 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "我要询价",
+  "usingComponents": {
+    "van-field": "/compoent/dist/field/index",
+    "van-cell": "/compoent/dist/cell/index",
+    "van-cell-group": "/compoent/dist/cell-group/index",
+    "van-transition": "/compoent/dist/transition/index",
+    "van-radio": "/compoent/dist/radio/index",
+    "van-radio-group": "/compoent/dist/radio-group/index",
+    "van-button": "/compoent/dist/button/index",
+    "van-panel": "/compoent/dist/panel/index",
+    "van-card": "/compoent/dist/card/index",
+    "van-icon": "/compoent/dist/icon/index",
+    "wux-upload": "/compoent/iveiw/upload/index",
+    "wux-tabs": "/compoent/iveiw/tabs/index",
+    "wux-tab": "/compoent/iveiw/tab/index",
+    "wux-badge": "/compoent/iveiw/badge/index"
+  }
 }

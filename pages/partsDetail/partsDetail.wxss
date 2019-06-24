@@ -1,0 +1,113 @@
+/* pages/partsDetail/partsDetail.wxss */
+.container{
+  height: 100%;
+  margin: 0%;
+  margin-bottom:1rem;
+  padding:.8rem 0;
+}
+.iconSearch{
+  background-repeat:no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width:80%;
+  height:14rem;
+  padding:1rem 0;
+  }
+  .detailTitle{
+    width:100%;
+    font-size:.8rem;
+    align-items: left;
+    margin:.5rem 0;
+    background: #ffffff;
+    padding:.8rem 2rem;
+    font-weight: bold;
+  }
+  .detailTitle .vip{
+    font-size:.9rem;
+    color:#FF5500;
+    margin:.5rem 0;
+    padding:0 30rpx;
+  }
+  .picDetail{
+   width:100%;
+   font-size:.8rem;
+   background: #ffffff;
+  margin:.5rem 0;
+  padding:0rem 30rpx;
+  }
+  .van-tab{
+    color:#666666 !important;
+  }
+  .van-tab--active{
+    background: none !important;
+    color:#F7B000 !important;
+  }
+  .van-tabs__scroll--card{
+    border:1px solid #eaeaea !important;
+  }
+  .van-tabs--card{
+    margin:0 !important;
+  }
+  .van-tabs__nav--card .van-tab{
+    border-right:1px solid #eaeaea !important;
+    height:44px !important;
+    line-height:44px !important;
+
+  }
+  .van-tabs--card{
+    padding-top:46px !important;
+  }
+ 
+  .van-tabs__wrap{
+    height:44px !important;
+  }
+  .van-tabs__content{
+    padding:14rpx 30rpx;
+  }
+  .van-goods-action.van-button--square{
+    width:180px !important;
+  }
+  .van-button--danger{
+    background-color:#FFCF61 !important;
+    border:1px solid #FFCF61 !important;
+    color:#333333 !important; 
+  }
+  .van-button--warning{
+    background-color:#515151 !important;
+    border:1px solid #515151 !important;
+  }
+  .vipView{
+    width:180px!important;
+    line-height: 50px;
+    text-align: center;
+    background: #333333;
+    position: relative;
+    color:#ffffff;
+  }
+.vipView .iconNumber{
+  position: absolute;
+  top:-10rpx;
+  left:20rpx;
+  display: inline-block;
+  width:50px;
+  height:50px;
+  background-repeat:no-repeat;
+  background-size: 60%;
+  background-position: center;
+  background-color: #FECF61;
+  border-radius: 100%;
+}
+.vipView .vip{
+  position: absolute;
+  bottom:8px;
+  font-size:.75rem;
+  color:ffffff;
+  left:70px;
+}
+.vipView .number{
+  position: absolute;
+  bottom:-11px;
+  font-size:.6rem;
+  color:#eaeaea;
+  left:70px;
+}

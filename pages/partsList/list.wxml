@@ -1,0 +1,134 @@
+<!--pages/partsList/list.wxml-->
+<view class="container page">
+  <view class="index_search">
+      <span class="iconSearch" style="background-image: url('../../assets/images/icons/search.png');" ></span>
+      <input class='inputSearch' placeholder="名称/编码" />
+      <span class="iconDelet" style="background-image: url('../../assets/images/icons/delet.png');" ></span>
+  </view>
+  <view style="width:100%;margin-top:.3rem;font-size:.75rem;">
+     <van-tabs active="{{ active }}">
+      <van-tab title="全部">
+      <view wx:for="{{ goodsItem }}" wx:key="" bindtap="gotoDetail" data-path="{{url}}">
+        <van-card
+          tags="2"      
+          price="{{item.money}}"
+          desc="{{item.descript}}"
+          title="{{item.goodsTitle}}"
+          thumb="{{item.imageURL }}"
+          lazy-load
+          num-class
+        >
+          <view slot="tags">
+            <span>{{item.brand}}</span> 
+            <span style="color:#cccccc;margin:0 .5rem;">|</span>
+            <span>{{item.volume}}</span>
+          </view>
+          <view slot="footer" class="shopcar">
+            <span>{{item.shopcar}}</span> 
+          </view>
+        </van-card>
+      </view>
+      </van-tab>
+      <van-tab title="虑清器">
+        <view wx:for="{{ itemswitch }}" wx:key="">
+          <van-card
+            tags="2"      
+            price="{{item.money}}"
+            desc="{{item.descript}}"
+            title="{{item.goodsTitle}}"
+            thumb="{{item.imageURL }}"
+            lazy-load
+            num-class
+          >
+            <view slot="tags">
+              <span>{{item.brand}}</span> 
+              <span style="color:#cccccc;margin:0 .5rem;">|</span>
+              <span>{{item.volume}}</span>
+            </view>
+            <view slot="footer" class="shopcar">
+              <span>{{item.shopcar}}</span> 
+            </view>
+          </van-card>
+        </view>     
+      
+      </van-tab>
+      <van-tab title="煞车油">
+        <view wx:for="{{ itemswitch }}" wx:key="">
+          <van-card
+            tags="2"      
+            price="{{item.money}}"
+            desc="{{item.descript}}"
+            title="{{item.goodsTitle}}"
+            thumb="{{item.imageURL }}"
+            lazy-load
+            num-class
+          >
+            <view slot="tags">
+              <span>{{item.brand}}</span> 
+              <span style="color:#cccccc;margin:0 .5rem;">|</span>
+              <span>{{item.volume}}</span>
+            </view>
+            <view slot="footer" class="shopcar">
+              <span>{{item.shopcar}}</span> 
+            </view>
+          </van-card>
+        </view>          
+      </van-tab>
+      <van-tab title="波箱油3">
+        <view wx:for="{{ itemswitch }}" wx:key="">
+          <van-card
+            tags="2"      
+            price="{{item.money}}"
+            desc="{{item.descript}}"
+            title="{{item.goodsTitle}}"
+            thumb="{{item.imageURL }}"
+            lazy-load
+            num-class
+          >
+            <view slot="tags">
+              <span>{{item.brand}}</span> 
+              <span style="color:#cccccc;margin:0 .5rem;">|</span>
+              <span>{{item.volume}}</span>
+            </view>
+            <view slot="footer" class="shopcar">
+              <span>{{item.shopcar}}</span> 
+            </view>
+          </van-card>
+        </view>
+      </van-tab>
+    </van-tabs>
+  </view>
+
+  <wux-cascader visible="{{visible1}}" controlled value="{{value1}}" title="选择车系" options="{{ options1 }}" bind:close="onClose1" bind:change="onChange1" bind:load="onLoadOptions"  class="selectBrand"/>
+
+  <wux-cascader visible="{{visible2}}" controlled value="{{value2}}" title="选择品牌" options="{{ options2 }}" bind:close="onClose2" bind:change="onChange2" bind:load="onLoadOptions"  class="selectBrand"/>
+
+<wux-cascader visible="{{visible3}}" controlled value="{{value3}}" title="选择车型" options="{{ options3 }}" bind:close="onClose3" bind:change="onChange3" bind:load="onLoadOptions" />
+
+  <view class="page__bd">
+    <!-- <wux-filterbar items="{{ items }}" bind:change="onChange" bind:open="onOpen" bind:close="onClose" />
+    <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__bd">
+           
+        </view>
+    </view> -->
+    <wux-row class="partsLists">
+      <wux-col span="4" >
+        <wux-cell-group title="">
+         <wux-cell title="综合排序"  bind:click="onOpen1"></wux-cell>
+        </wux-cell-group>
+      </wux-col>
+      <wux-col span="4">
+        <wux-cell-group title="">
+         <wux-cell title="筛选品牌"  bind:click="onOpen2"></wux-cell>
+        </wux-cell-group>
+       
+      </wux-col>
+      <wux-col span="4">
+        <wux-cell-group title="">
+         <wux-cell title="筛选车型"  bind:click="onOpen3"></wux-cell>
+        </wux-cell-group>
+      </wux-col>
+    </wux-row>
+  </view>
+</view>

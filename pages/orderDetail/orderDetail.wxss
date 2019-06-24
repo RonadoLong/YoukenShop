@@ -1,0 +1,73 @@
+/* pages/orderDeatil/orderDeatil.wxss */
+.container{
+  height: 100%;
+  width:100%;
+  padding: 0%;
+  margin: 0%;
+  margin-bottom:1rem;
+}
+.detailTitel{
+  width: 100%;
+}
+.details{
+  padding:0rpx 40rpx 20rpx 40rpx;
+  background: #ffffff;
+  margin-bottom:24rpx;
+}
+.detailTitel .number{
+  padding-top:20rpx;
+}
+.detailTitel .number, .detailTitel .time{
+  text-align: center;
+  font-size: .8rem;
+  color:#777777;
+  padding-bottom:16rpx;
+}
+.detailTitel .time{
+  border-bottom:1px solid #eaeaea;
+}  
+.detailTitel .buys, .detailTitel .superior, .detailTitel .carTitle, .descript{
+  font-size:.9rem;
+  padding-top:20rpx;
+}
+.detailTitel .superior, .detailTitel .carTitle{
+  padding-bottom:20rpx;
+  border-bottom:1px solid #eaeaea;
+}
+.detailTitel .descript, .detailTitel .code{
+  padding-bottom:20rpx;
+}
+.detailTitel .brand, .detailTitel .code{
+  color:#777777;
+  font-size:.9rem;
+}
+.detailTitel .brand span{
+  width:50%;
+  display: inline-block;
+}
+.detailTitel .statistics{
+  border-bottom:1px solid #eaeaea;
+  padding-bottom:20rpx;
+}
+.detailTitel .statistics:last-child{
+  border-bottom:none;
+}
+.detailTitel .zhifu{
+  border-bottom:1px solid #eaeaea;
+  padding-bottom:20rpx;
+}
+.gotoPay{
+  width:100%;
+  text-align: right;
+  background: #ffffff;
+
+}
+.gotoPay span{
+  display: inline-block;
+  width:30%;
+  background: #FFCF61;
+  padding:8px 10px;
+  text-align: center;
+  margin-right:40rpx;
+  margin-top:32rpx;
+}

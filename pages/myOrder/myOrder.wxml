@@ -1,0 +1,48 @@
+<!--pages/myOrder/myOrder.wxml-->
+<view class="container">
+<view style="width:100%;">
+  <van-tabs active="{{ active }}">
+    <van-tab title="全部">
+      <view class="orderCompany"  wx:for="{{items}}" wx:key="id">
+        <van-panel title="{{item.titleName}}" desc="" status="" use-footer-slot is-link bindtap="gotoDetail"  data-path="{{url}}">
+          <view class="companyCon"> 
+            <span style="font-size:.85rem;font-weight:bold;">{{item.brand}}</span>
+          </view>
+          <view class="companyCon">
+            订单编号：{{item.brandBumber}}
+          </view>
+          <view class="companyCon">
+            {{item.dateTime}}
+          </view>
+          <view style="border-top:1px solid #eaeaea;margin-top:10px;padding-top:10px;">
+            <view class="companyCon">
+              采购员：{{item.purchaser}}
+            </view>
+            <view class="companyCon">
+              供应商：{{item.buyer}}
+            </view>
+            <view class="companyCon">
+              配件数量：{{item.number}}
+            </view>
+            <view class="companyCon" wx:if="{{item.wechatPay}}">
+              支付方式：{{item.wechatPay}}
+            </view>
+            <view class="companyCon">
+              <span>订单状态：{{item.orderState}}</span>
+              <span class="allMoney" >总计：{{item.allMoney}}</span>
+            </view>
+          </view>
+          <view slot="footer" class="footerCost">
+            <span class="time unshipped" wx:if="{{item.unshipped}}">{{item.unshipped}}</span>
+            <span class="time" wx:if="{{item.time}}">{{item.time}}后失效</span>
+            <van-button size="small" class="payMoney" wx:if="{{!item.wechatPay}}">去付款</van-button>
+          </view>
+        </van-panel>
+      </view>
+    </van-tab>
+    <van-tab title="已发货">内容 2</van-tab>
+    <van-tab title="未发货">内容 3</van-tab>
+    <van-tab title="已收货">内容 4</van-tab>
+  </van-tabs>
+</view>
+</view>

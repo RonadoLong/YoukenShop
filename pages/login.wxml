@@ -1,0 +1,15 @@
+<!--pages/profile/login/login.wxml-->
+<view class="page__bd">
+  <wux-cell-group>
+      <wux-cell hover-class="none">
+          <wux-input label="" placeholder="请输入手机号码" max-length="11"/>
+      </wux-cell>
+      <wux-cell hover-class="none">
+          <wux-input label="" placeholder="请填入密码" password type="number" max-length="6" />
+      </wux-cell>
+  </wux-cell-group>
+</view>
+<view class="page__bd page__bd_spacing" style="padding:2rem 1rem;">
+ <wux-button block type="energized" form-type='submit' >登录</wux-button>
+ <wux-button class="register" bindtap="gotoRegister">马上注册</wux-button>
+</view>

@@ -1,2 +1,33 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<view class="container">
+ <view class="myheader">
+    <view class="userPhoto">
+        <view class="photo">
+        <image style="background-image: url('../../assets/images/iconfont-user-active.png');" />
+        </view>
+    </view>
+    <view class="userName">
+      <view class="company"> {{company}} </view>
+      <view class="name"> {{name}} </view>
+    </view>
+ </view>
+  <!-- <van-cell-group wx:for="{{ items }}" wx:key="">
+    <block >
+    <van-field
+      value=""
+      label="{{item.text}}"
+      left-icon="todo-list"
+      icon="arrow"
+      disabled
+      border="{{ false }}" bindtap="gotoDetail" data-path="{{item.path}}"/>
+    </block>
+    
+  </van-cell-group> -->
+  <wux-cell-group wx:for="{{ items }}" wx:key="" style="width:100%;">
+      <wux-cell thumb="{{itme.icon}}" title="{{item.text}}" is-link bindtap="gotoDetail" data-path="{{item.path}}"></wux-cell>
+  </wux-cell-group>
+
+  <view class="returnBack" bindtap="returnBack" data-path="{{url}}">
+    退出
+  </view>
+</view>

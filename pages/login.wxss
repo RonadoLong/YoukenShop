@@ -1,0 +1,15 @@
+/* pages/login.wxss */
+.page__bd{
+  font-size:.75rem;
+}
+.wux-button--energrized.wux-button--hover{
+  background:#FFCF61 !important; 
+  color:#555555 !important;
+}
+.register .wux-button--stable{
+  width:100%;
+  margin: 0 auto;
+  color:#6A9CE4 !important;
+  background: none  !important;
+  align-items: center;
+}

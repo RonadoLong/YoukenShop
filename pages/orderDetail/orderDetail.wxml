@@ -1,0 +1,59 @@
+<!--pages/orderDetail/orderDetail.wxml-->
+<view class="container">
+  <view  class="detailTitel" wx:for="{{items}}" wx:key="id">
+    <view class='details'>
+      <view class="number">订单编号：{{item.orderNumber}}</view>
+      <view class="time">{{item.dateTime}}</view>
+      <view class="buys">采购员：{{item.buyer}}</view>
+      <view class="superior">供应商：{{item.superior}}</view>
+      <view class="buys"> 
+        <span>顺丰快递</span> 
+        <span style="float:right;margin-right:40rpx;color:#999999;">{{item.express}}</span> 
+      </view>
+    </view>
+    <view class='details'>
+      <view class="carTitle">{{item.titleNmae}}</view>
+      <view  wx:for="{{itemGoods}}" wx:key="" class="statistics">
+        <view class="descript">{{item.descript}}</view>
+        <view class="code">编码：{{item.code}}</view>
+        <view class="brand">
+          <span>品牌：{{item.brand}}</span>
+          <span>品质：{{item.quilty}}</span>
+        </view>
+        <view class="buys"> 
+          <span style="color:#999999;">数量：{{item.number}}</span> 
+          <span style="float:right;margin-right:40rpx;">小计：￥{{item.money}}</span> 
+        </view>  
+      </view>
+    </view>
+    <view class="details">
+      <view class="buys zhifu">
+        <span style="color:#999999;">支付方式</span> 
+        <span style="float:right;margin-right:40rpx;color:#FF0000;">{{item.wechatPay}}</span> 
+      </view>
+      <view class="buys zhifu">
+        <span style="color:#999999;">支付状态</span> 
+        <span style="float:right;margin-right:40rpx;color:#555555;">{{item.status}}</span> 
+      </view>
+       <view class="buys" style="color:#FF5500">
+        <span >商品总额</span> 
+        <span style="float:right;margin-right:40rpx;">￥{{item.goodsCost}}</span> 
+      </view>
+      <view class="buys">
+        <span style="color:#999999;">包厢费</span> 
+        <span style="float:right;margin-right:40rpx;color:#999999;">￥{{item.boxFare}}</span> 
+      </view>
+      <view class="buys zhifu">
+        <span style="color:#999999;">服务费</span> 
+        <span style="float:right;margin-right:40rpx;color:#999999;">￥{{item.serviceFare}}</span> 
+      </view>    
+      <view class="buys" style="text-align:right;width:100%;">
+        <span style="color:#333333;font-size:1.1rem;">应付：￥{{item.copeWith}}</span> 
+      </view>  
+    </view>
+  </view>
+  <view class="gotoPay">
+    <span>去付款</span>
+  </view>
+
+</view>

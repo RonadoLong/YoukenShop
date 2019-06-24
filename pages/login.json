@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "登录",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "wux-cell-group": "/compoent/iveiw/cell-group/index",
+    "wux-cell": "/compoent/iveiw/cell/index",
+    "wux-input": "/compoent/iveiw/input/index",
+    "wux-icon": "/compoent/iveiw/icon/index",
+    "wux-button": "/compoent/iveiw/button/index"
+  }
+}

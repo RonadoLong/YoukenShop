@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "配件详情",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "wux-cell-group": "/compoent/iveiw/cell-group/index",
+    "wux-cell": "/compoent/iveiw/cell/index",
+    "wux-input-number": "/compoent/iveiw/input-number/index",
+    "van-tab": "/compoent/dist/tab/index",
+    "van-tabs": "/compoent/dist/tabs/index",
+    "van-goods-action": "/compoent/dist/goods-action/index",
+    "van-goods-action-icon": "/compoent/dist/goods-action-icon/index",
+    "van-goods-action-button": "/compoent/dist/goods-action-button/index",
+    "van-icon": "/compoent/dist/icon/index"
+  }
+}

@@ -1,0 +1,34 @@
+<!--pages/partsDetail/partsDetail.wxml-->
+<view class='container'>
+  <view class="iconSearch" style="background-image: url('../../assets/images/start.jpg');" ></view>
+  <view class="detailTitle">
+    <view style='padding:0 30rpx;'>壳牌 汽机油（HX3） SL 15W40 4L</view>
+    <view class="vip">会员可见</view>
+  </view>
+  <view style="width:100%;font-size:.8rem;">
+    <wux-cell-group >
+            <wux-cell title="数量" hover-class="none">
+                <wux-input-number longpress slot="footer" />
+            </wux-cell>
+        </wux-cell-group>
+  </view>
+  <view class='picDetail'>
+    <van-tabs type="card">
+      <van-tab title="图文详情">
+       内容 1
+      </van-tab>
+      <van-tab title="扩展参数">内容 2</van-tab>
+      <van-tab title="适应车型">内容 3</van-tab>
+      <van-tab title="售后服务">内容 4</van-tab>
+    </van-tabs>
+  </view>
+</view>
+<van-goods-action>
+  <span class="vipView">
+    <span class="iconNumber" style="background-image: url('../../assets/images/icons/delet.png');"></span>
+    <span class="vip">会员可见</span> 
+    <view class="number">数量：1</view>
+  </span>
+  <van-goods-action-button text="加入购物蓝" type="warning" />
+  <van-goods-action-button text="去结算"  bindtap="gotoDetail" data-path="{{url}}"/>
+</van-goods-action>

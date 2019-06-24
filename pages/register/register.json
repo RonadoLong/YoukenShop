@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "用户注册",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "van-field": "/compoent/dist/field/index",
+    "van-area": "/compoent/dist/area/index",
+    "van-checkbox": "/compoent/dist/checkbox/index",
+    "van-checkbox-group": "/compoent/dist/checkbox-group/index"
+    
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "发现",
+  "usingComponents": {
+    "van-search": "/compoent/dist/search/index",
+    "van-tab": "/compoent/dist/tab/index",
+    "van-tabs": "/compoent/dist/tabs/index",
+    "van-icon": "/compoent/dist/icon/index",
+    "van-panel": "/compoent/dist/panel/index",
+    "van-row": "/compoent/dist/row/index",
+    "van-col": "/compoent/dist/col/index",
+    "wux-icon": "/compoent/iveiw/icon/index",
+    "wux-grids": "/compoent/iveiw/grids/index",
+    "wux-grid": "/compoent/iveiw/grid/index"
+  }
+}

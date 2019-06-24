@@ -1,0 +1,20 @@
+{
+  "navigationBarTitleText": "配件列表",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "wux-search-bar": "/compoent/iveiw/search-bar/index",
+    "wux-filterbar": "/compoent/iveiw/filterbar/index",
+    "van-tab": "/compoent/dist/tab/index",
+    "van-tabs": "/compoent/dist/tabs/index",
+    "van-card": "/compoent/dist/card/index",
+    "wux-icon": "/compoent/dist/icon/index",
+    "wux-cell-group": "/compoent/iveiw/cell-group/index",
+    "wux-cascader": "/compoent/iveiw/cascader/index",
+    "wux-cell": "/compoent/iveiw/cell/index",
+    "wux-select": "/compoent/iveiw/select/index",
+    "wux-row": "/compoent/iveiw/row/index",
+    "wux-col": "/compoent/iveiw/col/index",
+    "wux-index": "/compoent/iveiw/index/index",
+    "wux-index-item": "/compoent/iveiw/index-item/index"
+  }
+}

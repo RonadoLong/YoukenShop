@@ -1,1 +1,113 @@
 /* pages/discover/discover.wxss */
+.container{
+  height: 100%;
+  margin: 0%;
+	background: #f4f4f4;
+  margin-bottom:1rem;
+  padding:.5rem .8em;
+}
+.van-cell{
+  border-bottom:1px solid #eaeaea;
+}
+van-cell-group{
+  width:100%;
+}
+.camera{
+  padding:1rem .2rem;
+  background: #ffffff;
+}
+.camera button{
+ height:60px;
+  background-repeat:no-repeat;
+  display:block;
+  background-size:70px 60px;
+  width:70px;
+  background-color:#fff;
+}
+.titleVoice{
+  font-size:.7rem;
+  background:#ffffff;
+  padding:10px 15px 5px 15px;
+}
+.titleVoice .wux-tabs-tab{
+  font-size:13px;
+}
+.titleVoice .wux-tabs{
+  width:74%;
+  height:24px;
+  line-height: 24px;
+}
+.titleVoice .wux-tabs__tab-title{
+  border:1px solid #ccc;
+  color:#666666;
+  font-size:13px;
+  padding:0 .4rem;
+}
+.titleVoice  .wux-tabs__tab--current .wux-tabs__tab-title{
+  background: #fac685;
+  border:1px solid #fac685;
+}
+.titleVoice .wux-tabs__tab-bar{
+  height:0 !important;
+}
+textarea{
+  width:94.5%;
+  height:80px;
+  background:#fff;
+  padding:.1rem .5rem;
+}
+.titleVoice span{
+  float:left;
+}
+.titleVoice radio, .titleVoice van-button{
+  display: inline-block;
+  margin-left:1rem;
+  color:#999999;
+}
+.van-button--normal{
+  padding:0 5px !important;
+}
+.van-button{
+  height:30px !important;
+  line-height:30px !important;
+}
+.titleVoice .active button{
+  background: #fac685 !important;
+  border:1px solid #fac685;
+}
+.surePull{
+  width:90%;
+  background: #fac685;
+  margin:1rem;
+  text-align:center;
+  font-size:.8rem;
+  height:2rem;
+  line-height:2rem;
+}
+.adress{
+  background:#ffffff;
+  font-size:.7rem;
+  padding:.5rem .5rem .2rem .5rem;
+  position: relative;
+}
+.adress view{
+  padding-bottom:.2rem
+}
+.adress .arrRight{
+ position:absolute;
+  right:1rem;
+  top:1.6rem;
+  font-size:18px;
+  color:#999999
+}
+
+radio .wx-radio-input{ 
+    height:32rpx; 
+    width: 32rpx;
+    border:1px solid #ccc;
+    background: transparent;
+}
+radio .wx-radio-input.wx-radio-input-checked{
+     background: #fac685;
+     border:none;
+}

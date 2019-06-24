@@ -1,16 +1,22 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/discover",
+    "pages/home/index",
+    "pages/login",
+    "pages/partsList/list",
+    "pages/register/register",
+    "pages/orderDetail/orderDetail",
+    "pages/profile/profile",
+    "pages/getOrder/getOrder",
+    "pages/myOrder/myOrder",
+    "pages/partsDetail/partsDetail",
     "pages/discover/discover",
-    "pages/cart/cart",
-    "pages/profile/profile"
+    "pages/logs/logs",
+    "pages/cart/cart"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "FaXian",
+    "navigationBarTitleText": "小商场",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -20,7 +26,7 @@
     "backgroundColor": "#fff",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/home/index",
         "iconPath": "assets/images/iconfont-home.png",
         "selectedIconPath": "assets/images/iconfont-home-active.png",
         "text": "发现"
