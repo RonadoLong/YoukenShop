@@ -1,3 +1,7 @@
+import __config from '../etc/config'
+import HttpService from '../helper/HttpService'
+import CommonService from '../helper/CommonService'
+
 const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
@@ -15,5 +19,9 @@ const formatNumber = n => {
 }
 
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  HttpService: new HttpService({baseURL: __config.basePath},true,true),
+  CommonService: new CommonService,
+  // CacheService: new CacheService,
+  __config
 }

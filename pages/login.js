@@ -1,4 +1,6 @@
 // pages/profile/login/login.js
+const App =  getApp();
+
 Page({
 
   /**
@@ -9,11 +11,13 @@ Page({
   },
   // 登录成功跳转首页
   gotoLogin: function(e) {
-    let path = e.currentTarget.dataset.path;
-    wx.navigateTo({    //保留当前页面，跳转到应用内的某个页面（最多打开5个页面，之后按钮就没有响应的）
-      url: '/pages/home/index'
+    // let path = e.currentTarget.dataset.path;
+    // wx.navigateTo({    //保留当前页面，跳转到应用内的某个页面（最多打开5个页面，之后按钮就没有响应的）
+    //   url: '/pages/home/index'
+    // })
+    App.HttpService.getCodeByPhone("18826073368").then(res => {
+      console.log(res)
     })
-
   },
 
   // 跳转注册页面 
