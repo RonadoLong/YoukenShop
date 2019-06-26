@@ -1,4 +1,17 @@
 {
   "navigationBarTitleText": "购物车",
-  "usingComponents": {}
+  "navigationBarBackgroundColor": "#FAFAFA",
+  "usingComponents": {
+    "van-tab": "/compoent/dist/tab/index",
+    "van-tabs": "/compoent/dist/tabs/index",
+    "van-collapse": "/compoent/dist/collapse/index",
+    "van-collapse-item": "/compoent/dist/collapse-item/index",
+    "van-checkbox": "/compoent/dist/checkbox/index",
+    "van-checkbox-group": "/compoent/dist/checkbox-group/index",
+    "van-card": "/compoent/dist/card/index",
+    "wux-cell-group": "/compoent/iveiw/cell-group/index",
+    "wux-cell": "/compoent/iveiw/cell/index",
+    "wux-input-number": "/compoent/iveiw/input-number/index",
+    "van-submit-bar": "/compoent/dist/submit-bar/index"
+  }
 }

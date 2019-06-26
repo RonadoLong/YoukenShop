@@ -1,1 +1,91 @@
 /* pages/cart/cart.wxss */
+.container{
+  height: 100%;
+  padding: 0%;
+  margin: 0%;
+  margin-bottom:3rem;
+}
+.content{
+  width:100%;
+  background: #FAFAFA;
+}
+.van-cell{
+  background-color:#f2f3f5 !important;
+  padding-left:2.5rem !important;
+  position: relative;
+}
+.van-collapse-item__content{
+  color: #333 !important;
+  background-color: none !important;
+  padding:0 !important;
+
+}
+.van-checkbox{
+  display: inline;
+}
+.van-card__thumb{
+  width:90px !important;
+  height:90px !important;
+}
+.van-card__content{
+  margin-top:.6rem;
+}
+.van-card__desc{
+  margin-top:.3rem;
+}
+.van-card__num{
+  border:1px solid #F7B000;
+  color:#F7B000 !important;
+  padding:0rem .4rem;
+}
+.shopcar{
+  position: absolute;
+  right:.2rem;
+  bottom:.8rem;
+}
+.van-card__price{
+  margin-top:.5rem;
+  font-size:.75rem;
+}
+.van-tab--active{
+  color:#F7B000 !important;
+}
+.van-tabs__line{
+  background: #F7B000 !important;
+}
+.van-card{
+  font-size:.7rem !important;
+  color:#666666 !important;
+  border-bottom:1px solid #eaeaea;
+  background-color: none !important;
+  padding:5px 15px 5px 35px !important;
+}
+.chekboxss{
+  position: absolute;
+  left:16px;
+  z-index:99;
+  margin-top:2rem;
+}
+.titleChekbox{
+  position: absolute;
+  left:16px;
+  z-index:99;
+  margin-top:-1.6rem;
+}
+.wux-cell{
+  padding:0 !important;
+}
+.van-checkbox__icon{
+  border:1px solid #ccc !important;
+}
+.van-submit-bar__bar{
+  position: relative;
+  border-bottom:1px solid #eaeaea;
+  border-top:1px solid #eaeaea;
+}
+.bottomCheck{
+    position: absolute;
+    left:16px;
+    z-index:99;
+    margin-top:.1rem;
+}

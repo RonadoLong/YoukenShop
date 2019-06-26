@@ -1,0 +1,63 @@
+/* pages/inquiry /inquiry.wxss */
+.container{
+  height: 100%;
+  padding: 0%;
+  margin: 0%;
+  margin-bottom:3rem;
+  background: #f4f4f4;
+}
+.content{
+  width:100%;
+}
+.van-panel{
+  font-size:.8rem !important;
+  margin:.5rem 0;
+  position: relative;
+}
+.quiryTime{
+  padding:.2rem .8rem;
+}
+.quiryTime .dataTime span{
+  display: inline-block;
+  background: #666;
+  padding:2px 1px;
+  color:#fff;
+  border-radius: 2px;
+}
+.priceRit{
+  position: absolute;
+  right:1rem;
+  top:2.6rem;
+  color:#777;
+}
+.priceRit .detail{
+  color:#FF6A02;
+}
+.van-cell__title{
+  display: inline-block !important;
+  width:96% !important;
+  color:#333;
+  font-size:.9rem !important;
+}
+.panel-index--van-panel__header-value{
+  color:#999 !important;
+  flex:0.1 !important;
+}
+.reinquiry{
+  width:100%;
+  text-align: right;
+  font-size:.75rem !important;
+  border-top:1px solid #eaeaea;
+  padding-top:10px;
+}
+.van-button--small{
+  font-size:.8rem !important;
+}
+.needRequery span{
+  width:90% !important;
+  margin:0 auto !important;
+  background: #FFD87E !important;
+  border:1px solid #FFD87E !important;
+  display: block;
+  margin-bottom:3rem;
+}

@@ -1,4 +1,112 @@
 <!--pages/cart/cart.wxml-->
 <view class="container">
-  购物车页面
+  <view class="content">
+    <van-tabs active="{{ active }}" bind:change="onChangeTab">
+      <van-tab title="有价"> 
+        <van-collapse value="{{ activeNames1 }}" wx:for="{{carTitle}}" wx:key="id" bind:change="onChangeTab1">
+          <van-collapse-item name="1"  >
+            <van-checkbox 
+            value="{{ checkedAll }}" 
+            checked-color="#FFCF61" 
+            class="titleChekbox" bind:change="changeCheckAll">
+            </van-checkbox>
+            <view slot="title">
+              {{item.titleName}}
+            </view>
+            <view  wx:for="{{shopping}}" wx:key="id">
+              <van-checkbox 
+                value="{{ checkedSign }}" 
+                checked-color="#FFCF61" 
+                class="chekboxss" bind:change="changeCheckSign">
+              </van-checkbox>
+
+              <van-card
+                tags="2"      
+                price="{{item.money}}"
+                desc="{{item.descript}}"
+                title="{{item.goodsTitle}}"
+                thumb="{{item.imageURL}}"
+                lazy-load
+                num-class
+              >
+                <view slot="footer" class="shopcar">
+                   <wux-cell-group title="">
+                      <wux-cell title="" hover-class="none">
+                          <wux-input-number wux-sub-class="sub" wux-input-class="input" wux-add-class="add"  />
+                      </wux-cell>
+                  </wux-cell-group>
+                </view>
+              </van-card>
+            </view>
+              
+          </van-collapse-item>
+        </van-collapse>
+        <van-submit-bar
+          price="{{ 4050 }}"
+          button-text="去结算"
+          bind:submit="onClickButton"
+          safe-area-inset-bottom>
+         <van-checkbox 
+            value="{{ bottomChecked }}" 
+            checked-color="#FFCF61" 
+            class="bottomCheck" bind:change="bottomCheckAll">{{selected}}
+          </van-checkbox>
+
+        </van-submit-bar>
+      </van-tab>
+      <van-tab title="暂无价">
+       <van-collapse value="{{ activeNames2 }}" wx:for="{{carTitle2}}" wx:key="id" bind:change="onChangeTab2">
+          <van-collapse-item name="1"  >
+            <van-checkbox 
+            value="{{ checkedAll }}" 
+            checked-color="#FFCF61" 
+            class="titleChekbox" bind:change="changeCheckAll">
+            </van-checkbox>
+            <view slot="title">
+              {{item.titleName}}
+            </view>
+            <view  wx:for="{{shopping2}}" wx:key="id">
+              <van-checkbox 
+                value="{{ checkedSign }}" 
+                checked-color="#FFCF61" 
+                class="chekboxss" bind:change="changeCheckSign">
+              </van-checkbox>
+
+              <van-card
+                tags="2"      
+                price="{{item.money}}"
+                desc="{{item.descript}}"
+                title="{{item.goodsTitle}}"
+                thumb="{{item.imageURL}}"
+                lazy-load
+                num-class
+              >
+                <view slot="footer" class="shopcar">
+                   <wux-cell-group title="">
+                      <wux-cell title="" hover-class="none">
+                          <wux-input-number wux-sub-class="sub" wux-input-class="input" wux-add-class="add"  />
+                      </wux-cell>
+                  </wux-cell-group>
+                </view>
+              </van-card>
+            </view>
+              
+          </van-collapse-item>
+        </van-collapse>
+        <van-submit-bar
+          button-text="立即询价"
+          bind:submit="onClickButton"
+          >
+         <van-checkbox 
+            value="{{ bottomChecked }}" 
+            checked-color="#FFCF61" 
+            class="bottomCheck" bind:change="bottomCheckAll">{{selected}}
+          </van-checkbox>
+
+        </van-submit-bar>
+      </van-tab>
+    </van-tabs>
+
+  </view>
+
 </view>

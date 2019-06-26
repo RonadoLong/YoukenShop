@@ -1,0 +1,29 @@
+<!--pages/inquiry /inquiry.wxml-->
+<view class="container">
+  <view class="content">
+    <van-panel title="{{item.titleName}}" desc="" status=">" use-footer-slot wx:for="{{requiryData}}" wx:key='id'>
+      <view class="quiryTime">
+        <span class="dataTime" wx:if="{{item.hours}}">
+        结束时间：<span>{{item.hours}}</span>:<span>{{item.minute}}</span>:<span>{{item.second}}</span>
+        </span>
+        <span class="dataTime"  wx:if="{{item.number}}">
+          报价供应商数：<span>{{item.number}}</span>
+        </span>
+        <span  wx:if="{{item.yesToday}}">{{item.yesToday}}</span>
+      </view>
+      <view class="priceRit">
+       <span  wx:if="{{item.requryPrice}}">{{item.requryPrice}}</span>
+       <span class="detail"  wx:if="{{item.price}}">{{item.price}}</span>
+       <span  wx:if="{{item.order}}">{{item.order}}</span>
+      </view>
+      <view slot="footer" class="reinquiry" wx:if="{{item.reinqury}}">
+        <van-button size="small" style="padding:.3rem">
+          {{item.reinqury}}
+        </van-button>
+      </view>
+    </van-panel>
+    <van-button size="large" class="needRequery">
+      <span>我要询价</span>
+    </van-button>
+  </view>
+</view>

@@ -99,7 +99,7 @@
     </van-tabs>
   </view>
 
-  <wux-cascader visible="{{visible1}}" controlled value="{{value1}}" title="选择车系" options="{{ options1 }}" bind:close="onClose1" bind:change="onChange1" bind:load="onLoadOptions"  class="selectBrand"/>
+  <wux-cascader visible="{{visible1}}" controlled value="{{value1}}" title="选择车系" options="{{ options1 }}" bind:close="onClose1" bind:change="onChange1" bind:load="onLoadOptions"  class="selectBrand" />
 
   <wux-cascader visible="{{visible2}}" controlled value="{{value2}}" title="选择品牌" options="{{ options2 }}" bind:close="onClose2" bind:change="onChange2" bind:load="onLoadOptions"  class="selectBrand"/>
 
@@ -114,19 +114,19 @@
     </view> -->
     <wux-row class="partsLists">
       <wux-col span="4" >
-        <wux-cell-group title="">
-         <wux-cell title="综合排序"  bind:click="onOpen1"></wux-cell>
+        <wux-cell-group title="" >
+         <wux-cell title="综合排序"  bind:click="onOpen1" class="arrLine" style="background-image: url('../../assets/images/icons/arrLine.png')" ></wux-cell>
         </wux-cell-group>
       </wux-col>
       <wux-col span="4">
         <wux-cell-group title="">
-         <wux-cell title="筛选品牌"  bind:click="onOpen2"></wux-cell>
+         <wux-cell title="筛选品牌"  bind:click="onOpen2" class="arrLine" style="background-image: url('../../assets/images/icons/arrLine.png')" ></wux-cell>
         </wux-cell-group>
        
       </wux-col>
       <wux-col span="4">
         <wux-cell-group title="">
-         <wux-cell title="筛选车型"  bind:click="onOpen3"></wux-cell>
+         <wux-cell title="筛选车型"  bind:click="onOpen3" class="arrLine shaixuan" style="background-image: url('../../assets/images/icons/shaixuan.png')" ></wux-cell>
         </wux-cell-group>
       </wux-col>
     </wux-row>

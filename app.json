@@ -2,16 +2,17 @@
   "pages": [
     "pages/home/index",
     "pages/login",
+    "pages/inquiry/inquiry",
+    "pages/cart/cart",
+    "pages/partsDetail/partsDetail",
     "pages/partsList/list",
     "pages/register/register",
     "pages/orderDetail/orderDetail",
     "pages/profile/profile",
     "pages/getOrder/getOrder",
     "pages/myOrder/myOrder",
-    "pages/partsDetail/partsDetail",
     "pages/discover/discover",
-    "pages/logs/logs",
-    "pages/cart/cart"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",

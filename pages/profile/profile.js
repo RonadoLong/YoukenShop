@@ -11,7 +11,7 @@ Page({
       {
         icon: '../../assets/images/iconfont-help.png',
         text: '我的询价单',
-        path: ''
+        path: '/pages/inquiry/inquiry'
       },
       {
         icon: '../../assets/images/iconfont-order.png',
